@@ -1,0 +1,4 @@
+nf
+git add .
+git commit
+git clone

@@ -1,0 +1,188 @@
+''
+* {
+border: none;
+    border-radius: 10;
+    font-family: "IconsolataGo Nerd Font" ;
+    font-size: 22px;
+    min-height: 10px;/*inner top|bot*/
+}
+window#waybar {
+    /*background: transparent;*/
+    background: rgba(43, 48, 59, 0.5);
+}
+window#waybar.hidden {
+    opacity: 0.8;
+}
+#window {
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    transition: none;
+    color: transparent;
+    background: transparent;
+}
+#workspaces {
+    padding: 10px;
+    margin-right: 0px;
+    border-radius: 20px;
+    opacity: 0.88;
+}
+#workspaces button {
+    color: #131313;
+    border-radius: 20px;
+    font-weight:bold;
+    margin: 0px;
+    padding: 5px;
+    border-bottom: 3px solid #ffffff;
+}
+#workspaces button:hover {
+    background: lightblue;
+    color: #131313;
+    border-bottom: 3px solid #ffffff;
+}
+#workspaces button.focused {
+    background: #1f1f1f;
+    color: white;
+    border-bottom: 3px solid #ffffff;
+}
+#workspaces button.focused:hover {
+    background: lightblue;
+    color: black;
+    border-bottom: 3px solid #ffffff;
+}
+#workspaces button.urgent {
+    background-color: #eb4d4b;
+}
+#network {
+    margin-top: 6px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    transition: none;
+    color: #292a3f;
+    background: #bd93f9;
+}
+#pulseaudio {
+    margin-top: 6px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    transition: none;
+    color: #1A1826;
+    background: #FAE3B0;
+}
+#battery {
+    margin-top: 6px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    transition: none;
+    color: #292a3f;
+    background: #B5E8E0;
+}
+#battery.charging, #battery.plugged {
+    color: #282a3f;
+    background-color: #B5E8E0;
+}
+#battery.critical:not(.charging) {
+    background-color: #B5E8E0;
+    color: #282a3f;
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes blink {
+    to {
+        background-color: #BF616A;
+        color: #B5E8E0;
+    }
+}
+#backlight {
+    margin-top: 6px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    transition: none;
+    color: #282a3f;
+    background: #F8BD96;
+}
+#clock {
+    margin-top: 6px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    transition: none;
+    color: #282a3f;
+    background: #ABE9B3;
+}
+#memory {
+    margin-top: 6px;/*distance from top*/
+    margin-left: 8px;/*distance from left widget*/
+    padding-left: 10px;/*inner left*/
+    margin-bottom: 0px;
+    padding-right: 10px;
+    border-radius: 10px;/*border radius*/
+    transition: none;
+    color: #282a3f;
+    background: #DDB6F2;
+}
+#cpu {
+    margin-top: 6px;
+    margin-left: 8px;
+    padding-left: 10px;
+    margin-bottom: 0px;
+    padding-right: 10px;
+    border-radius: 10px;
+    transition: none;
+    color: #282a3f;
+    background: #96CDFB;
+}
+#tray {
+    margin-top: 6px;
+    margin-left: 8px;
+    padding-left: 10px;
+    margin-bottom: 0px;
+    padding-right: 10px;
+    border-radius: 10px;
+    transition: none;
+    color: #B5E8E0;
+    background: #282a3f;
+}
+#custom-launcher {
+    font-size: 24px;
+    margin-top: 6px;
+    margin-left: 8px;
+    padding-left: 18px;
+    padding-right: 5px;
+    border-radius: 10px;
+    transition: none;
+    color: #ffd866;
+    background: #282a3f;
+}
+#custom-power {
+    font-size: 20px;
+    margin-top: 6px;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding-left: 10px;
+    padding-right: 5px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    transition: none;
+    color: #161320;
+    background: #F28FAD;
+}
+''
